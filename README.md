@@ -17,6 +17,6 @@ transformers==4.3.1
 本人用ccks2020的中文医学实体关系抽取的数据训练模型，训练100个epoch最后验证集的f1_score约为60.78%  
 
 ## 模型结果对比  
-CasRel：f1=45.10%  
+CasRel：f1=51.28%  
 GPLinker：f1=59.15%  
 OneRel：f1=60.78%  
