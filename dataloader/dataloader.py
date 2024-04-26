@@ -91,6 +91,7 @@ def collate_fn(batch):
     batch_input_ids = torch.LongTensor(cur_batch, max_token_len).zero_()
     batch_attention_mask = torch.LongTensor(cur_batch, max_token_len).zero_()
     batch_loss_mask = torch.LongTensor(cur_batch, 1, max_token_len, max_token_len).zero_()
+    # 这里的53是指关系的数量，即跟config.py里的num_rel一致
     batch_matrix = torch.LongTensor(cur_batch, 53, max_token_len, max_token_len).zero_()
 
     for i in range(cur_batch):
